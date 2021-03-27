@@ -1,10 +1,10 @@
 import React from 'react'
 import getUser from '../utils/getUser'
 
-const Index = ({ repos, user }) => {
+const Repositorios = ({ repos, user }) => {
   return (
     <div className='container mx-auto'>
-      <h1 className='text-3xl font-semibold'>Olá! Eu sou o Davi Scholl</h1>
+      <h1 className='text-3xl font-semibold'>Rota REPOSITÓRIOS</h1>
 
       <h3 className='text-xl font-semibold'>Meus repositórios de códigos no Github</h3>
       <p>Github status: Public Repos: {user.public_repos}</p>
@@ -13,7 +13,7 @@ const Index = ({ repos, user }) => {
           <div key={repo.id} className='rounded bg-gray-200 mx-5 my-3 p-3 hover:shadow-md'>
             <h3 className='font-semibold text-lg'>{repo.full_name}</h3>
             <p>Language: {repo.language}</p>
-            <p>{repo.description}</p>
+            <p>Descrição: {repo.description}</p>
           </div>
         )
       })}
@@ -33,4 +33,4 @@ export async function getServerSideProps(context) {
   }
 }
 
-export default Index
+export default Repositorios
