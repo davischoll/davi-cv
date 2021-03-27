@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Index = (props) => {
+const Index = ({ repos, user }) => {
   return (
     <div className='container mx-auto'>
       <h1 className='text-3xl font-semibold'>Olá! Eu sou o Davi Scholl</h1>
 
       <h3 className='text-xl font-semibold'>Meus repositórios de códigos no Github</h3>
-
-      {props.repos.map(repo => {
+      <p>Github status: Public Repos: {user.public_repos}</p>
+      {repos.map(repo => {
         return (
           <div key={repo.id} className='rounded bg-gray-200 mx-5 my-3 p-3 hover:shadow-md'>
             <h3 className='font-semibold text-lg'>{repo.full_name}</h3>
@@ -21,6 +21,9 @@ const Index = (props) => {
 }
 
 export async function getServerSideProps(context) {
+  const resUser = await fetch('https://api.github.com/users/davischoll')
+  const user = await resUser.json()
+  
   const resRepos = await fetch('https://api.github.com/users/davischoll/repos?sort=updated')
   const originalReposList = await resRepos.json()
 
@@ -48,7 +51,8 @@ export async function getServerSideProps(context) {
   return {
     props: {
       currentDate: new Date().toString(),
-      repos
+      repos,
+      user
     }
   }
 }
