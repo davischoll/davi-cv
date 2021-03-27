@@ -2,13 +2,15 @@ import React from 'react'
 
 const Index = (props) => {
   return (
-    <div>
-      <h1>Bem-vindo!</h1>
-      <div>{props.currentDate}</div>
+    <div className='container mx-auto'>
+      <h1 className='text-3xl font-semibold'>Olá! Eu sou o Davi Scholl</h1>
+
+      <h3 className='text-xl font-semibold'>Meus repositórios de códigos no Github</h3>
+
       {props.repos.map(repo => {
         return (
-          <div key={repo.id}>
-            <h3>{repo.full_name}</h3>
+          <div key={repo.id} className='rounded bg-gray-200 mx-5 my-3 p-3 hover:shadow-md'>
+            <h3 className='font-semibold text-lg'>{repo.full_name}</h3>
             <p>Language: {repo.language}</p>
             <p>Descrição: {repo.description}</p>
           </div>
