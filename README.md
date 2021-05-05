@@ -1,4 +1,4 @@
-## Curriculum DAVI SCHOLL
+## Curriculum DAVI SCHOLL [em construção]
 
 Página construída com [Next.js](https://nextjs.org/) e [React](https://reactjs.org/), que busca e exibe todos os repositórios da conta do Github em tempo real.
 
@@ -51,11 +51,11 @@ https://api.github.com/users/davischoll/repos?sort=updated
 
 ### Server Side Rendering (SSR)
 
-No Next, se exportarmos uma função com o nome getServerSideProps(), o retorno dessa função será injetado no componente Index como propriedade. Este trecho do código será executado e renderizado no servidor e enviado para o componente, que por sua vez também será renderizado no servidor. A partir daí os dados serão enviados ao cliente.
+No Next, se exportarmos uma função com o nome **getServerSideProps()**, o retorno dessa função será injetado no componente Index como propriedade. Este trecho do código será executado e renderizado no servidor e enviado para o componente, que por sua vez também será renderizado no servidor. A partir daí os dados serão enviados ao cliente.
 
 Caso não tenha essa função, a página não será renderizada no servidor. O Next possui essa flexibilidade, de permitir ou não, que o conteúdo seja renderizado no servidor.
 
-Se tiver a função getServerSideProps(), a aplicação vai precisar do script "start": "next start", para subir a aplicação.
+Se tiver a função getServerSideProps(), a aplicação vai precisar do script `"start": "next start"`, para ser publicada.
 
 
 ### Construído com:
