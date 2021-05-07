@@ -61,9 +61,8 @@ Se tiver a função getServerSideProps(), a aplicação vai precisar do script `
 ### Construído com:
 
 * [NextJS](https://nextjs.org/) - The React Framework.
-* [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework for
-rapidly building custom designs.
-* [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+* [Sass](https://sass-lang.com/) - CSS with superpowers.
+* [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
 
 ### Autor:
 
