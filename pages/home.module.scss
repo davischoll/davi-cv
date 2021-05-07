@@ -1,0 +1,85 @@
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.header {
+  height: 30rem;
+
+  margin-top: 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  .headerInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1, h2 {
+      margin-left: 3rem;
+    }
+
+    h1 {
+      font-weight: bold;
+    }
+
+    .boxContact {
+      margin-top: 2rem;
+      
+      width: 100%;
+      
+      border: 1px solid var(--purple-500);
+      border-radius: 5px;
+      
+      position: relative;
+
+      h3 {
+        position: absolute;
+        background: var(--purple-500);
+        color: var(--white);
+        padding: 5px 15px;
+        top: 0;
+        margin-top: -20px;
+        margin-left: 3rem;
+      }
+
+      .iconsContact {
+        margin-top: 2rem;
+        margin-left: 3rem;
+
+        a {
+          margin-right: 1rem;
+        }
+      }
+
+      p {
+        margin: 0 0 0.5rem 3rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  img {
+    max-width: 70%;
+  }
+}
+
+.aboutMe {
+  width: auto;
+  height: auto;
+
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 5px;
+
+  p {
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+}

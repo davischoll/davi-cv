@@ -1,13 +1,13 @@
 const getUser = async(username) => {
   const resUser = await fetch('https://api.github.com/users/' + username)
   const user = await resUser.json()
-  
+
   const resRepos = await fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
   const originalReposList = await resRepos.json()
 
   // MODELO PARA REMOVER ALGUM REPOSITÓRIO:
 
-  const dontShowReposList = ['davischoll/mini-car-phone-holder', 'davischoll/db-access']
+  const dontShowReposList = ['davischoll/teste-project', 'davischoll/db-access']
 
   //  VAI FILTRAR OS REPÓSITÓRIOS QUE NÃO SÃO FORK: "fork": true,
   const isNotFork = repo => !repo.fork
