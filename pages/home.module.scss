@@ -27,6 +27,7 @@
 
     h1 {
       font-weight: bold;
+      line-height: 2.5rem;
     }
 
     .boxContact {
@@ -66,7 +67,7 @@
   }
 
   img {
-    max-width: 70%;
+    max-width: 77%;
   }
 }
 
@@ -78,9 +79,13 @@
   padding: 1.5rem 2rem;
   border-radius: 5px;
 
+  box-shadow: 5px 5px 5px 2px var(--gray-100);
+
+  color: var(--gray-900);
+
   p {
     padding-bottom: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   p:last-child {
@@ -105,10 +110,15 @@
       background: var(--white);
       padding: 1rem;
       border-radius: 5px;
-      border: 1px solid var(--gray-100);
+      border: 0.5px solid var(--gray-100);
 
       &:hover {
       box-shadow: 5px 5px 5px 2px var(--gray-100);
+      }
+
+      a {
+        color: var(--gray-1000);
+        text-decoration: none;
       }
     }
   }

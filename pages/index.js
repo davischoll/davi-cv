@@ -16,9 +16,9 @@ const Index = ({ repos, user }) => {
           <div className={styles.boxContact}>
             <h3>CONTATO</h3>
             <div className={styles.iconsContact}>
-              <a href="https://www.linkedin.com/in/davischoll/" target="_blank"><FaLinkedin size={44} color="#343746"/></a>
-              <a href="https://www.github.com/davischoll/" target="_blank"><FaGithubSquare size={44} color="#343746"/></a>
-              <a href="https://www.instagram.com/davischoll/" target="_blank"><FaInstagramSquare size={44} color="#343746"/></a>
+              <a href="https://www.linkedin.com/in/davischoll/" target="_blank"><FaLinkedin size={54} color="#343746"/></a>
+              <a href="https://www.github.com/davischoll/" target="_blank"><FaGithubSquare size={54} color="#343746"/></a>
+              <a href="https://www.instagram.com/davischoll/" target="_blank"><FaInstagramSquare size={54} color="#343746"/></a>
             </div>
             <p><b>E-mail</b>: davis@bandavide.com.br</p>
           </div>
@@ -40,7 +40,7 @@ const Index = ({ repos, user }) => {
           {repos.map(repo => {
             return (
               <div key={repo.id} className={styles.repo}>
-                <h3 className='font-semibold text-lg'>{repo.full_name}</h3>
+                <h3><a href={"https://github.com/" + repo.full_name} target="blank">{repo.full_name}</a></h3>
                 <p>Language: {repo.language}</p>
                 <p>{repo.description}</p>
               </div>
