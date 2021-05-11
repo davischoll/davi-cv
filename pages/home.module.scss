@@ -75,11 +75,41 @@
   height: auto;
 
   background: var(--white);
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 5px;
 
   p {
     padding-bottom: 0.5rem;
     font-size: 1.1rem;
+  }
+
+  p:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.githubRepos {
+  width: auto;
+  height: auto;
+
+  .githubStatus {
+    padding: 1.5rem 0 1rem 1rem;
+  }
+
+  .reposList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    .repo {
+      background: var(--white);
+      padding: 1rem;
+      border-radius: 5px;
+      border: 1px solid var(--gray-100);
+
+      &:hover {
+      box-shadow: 5px 5px 5px 2px var(--gray-100);
+      }
+    }
   }
 }
