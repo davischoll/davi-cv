@@ -1,13 +1,30 @@
 .container {
-  max-width: 1280px;
+  width: 90vw;
+  height: 100vh;
   margin: auto;
+
+  &::before {
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+
+    background-image: url("/bg-image.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    
+    opacity: 0.8;
+  }
 }
 
 .header {
   height: 30rem;
-
   margin-top: 1rem;
 
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -65,13 +82,10 @@
       }
     }
   }
-
-  img {
-    max-width: 77%;
-  }
 }
 
 .aboutMe {
+  position: relative;
   width: auto;
   height: auto;
 
@@ -120,6 +134,25 @@
         color: var(--gray-1000);
         text-decoration: none;
       }
+    }
+  }
+}
+
+.footer {
+  margin-top: 3rem;
+  border-top: 1px solid var(--gray-200);
+
+  .infoLink {
+    margin-top: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: var(--gray-900);
     }
   }
 }

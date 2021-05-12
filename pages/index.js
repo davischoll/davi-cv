@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { FaLinkedin, FaGithubSquare, FaInstagramSquare } from 'react-icons/fa'
 
 import getUser from '../utils/getUser'
@@ -7,6 +8,9 @@ import styles from './home.module.scss'
 const Index = ({ repos, user }) => {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Davi Scholl | Fullstack Developer</title>
+      </Head>
       <body>
       <header className={styles.header}>
 
@@ -48,6 +52,17 @@ const Index = ({ repos, user }) => {
           })}
         </div>
       </section>
+      
+      <footer className={styles.footer}>
+        <div className={styles.infoLink}>
+          <p>Você pode encontrar o código fonte desta página aqui:</p>
+          <a href="https://github.com/davischoll/davi-cv" target="blank">https://github.com/davischoll/davi-cv</a>
+        </div>
+        <div>
+
+        </div>
+      </footer>
+
       </body>
     </div>
   )
