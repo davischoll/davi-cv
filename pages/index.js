@@ -1,8 +1,10 @@
 import React from 'react'
-import getUser from '../utils/getUser'
-
-import { FaLinkedin, FaGithubSquare, FaInstagramSquare } from 'react-icons/fa'
 import Head from 'next/head'
+import { FaLinkedin, FaGithubSquare, FaInstagramSquare } from 'react-icons/fa'
+
+import getUser from '../utils/getUser'
+import Footer from '../components/Footer'
+import Education from '../components/Education'
 
 import styles from './home.module.scss'
 
@@ -38,28 +40,7 @@ const Index = ({ repos, user }) => {
           <p>Encontro satisfação ao colaborar de maneira ativa, colocando em prática conhecimentos, habilidades e experiência de vida em favor das organizações e das pessoas, contribuindo sempre para o benefício e crescimento de todos ao meu redor.</p>
         </section>
 
-        <section className={styles.education}>
-          <h2>FORMAÇÃO & CAPACITAÇÃO</h2>
-          <div className={styles.educationList}>
-            <div className={styles.educationListItem}>
-              <h3>Graduação</h3>
-              <h4>Análise e Desenvolvimento de Sistemas <canvas className={styles.divisor}></canvas> 2021</h4>
-              <p>UNINTER - Curitiba/PR</p>
-            </div>
-            <div className={styles.educationListItem}>
-              <h3>Curso</h3>
-              <h4>Fullstack Master <canvas className={styles.divisor}></canvas> 2021</h4>
-              <p>Formação continuada com Node.js; Express, Typescript; React; Next.js, Nest.js…</p>
-              <p>DEVPLENO - devpleno.com</p>
-            </div>
-            <div className={styles.educationListItem}>
-              <h3>Curso</h3>
-              <h4>Welcome To The Django <canvas className={styles.divisor}></canvas> 2020</h4>
-              <p>Python 3 + Django</p>
-              <p>HENRIQUE BASTOS - henriquebastos.net</p>
-            </div>
-          </div>
-        </section>
+        <Education />
 
         <section className={styles.githubRepos}>
           <p className={styles.githubStatus}><b>Github status</b>: Public Repos: {user.public_repos}</p>
@@ -76,13 +57,7 @@ const Index = ({ repos, user }) => {
           </div>
         </section>
         
-        <footer className={styles.footer}>
-          <div className={styles.infoLink}>
-            <p>Este website foi construído utilizando NextJS com SSR (Server Side Rendering) e ReactJS + Vercel como plataforma.</p>
-            <p>Você pode encontrar o código fonte desta página aqui:</p>
-            <a href="https://github.com/davischoll/davi-cv" target="blank">https://github.com/davischoll/davi-cv</a>
-          </div>
-        </footer>
+        <Footer />
       </body>
     </div>
   )
