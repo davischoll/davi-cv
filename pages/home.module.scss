@@ -21,7 +21,6 @@
 }
 
 .header {
-  height: 30rem;
   margin-top: 1rem;
 
   position: relative;
@@ -84,6 +83,20 @@
   }
 }
 
+@media (max-width: 1020px) {
+  .header {
+    height: auto;
+    padding-top: 2rem;
+  
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 70%;
+    }
+  }
+}
+
 .aboutMe {
   position: relative;
   width: auto;
@@ -104,6 +117,69 @@
 
   p:last-child {
     padding-bottom: 0;
+  }
+}
+
+.education {
+  margin-top: 2rem;
+  position: relative;
+  width: auto;
+  height: auto;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--purple-800)
+  }
+
+  .educationList {
+    background: var(--white);
+    padding: 1.5rem 2rem 1rem 2rem;
+    border-radius: 5px;
+  
+    box-shadow: 5px 5px 5px 2px var(--gray-100);
+  
+    color: var(--gray-900);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem;
+  }
+
+  .educationListItem {
+    border-bottom: 1px dotted var(--gray-200);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+    h3 {
+      font-variant-caps: all-petite-caps;
+      color: var(--purple-800);
+      font-size: 2rem;
+      line-height: 1.5rem;
+    }
+
+    h4 {
+      font-variant-caps: all-petite-caps;
+      font-size: 2rem;
+      font-weight: normal;
+
+      .divisor {
+        width: 5px;
+        height: 5px;
+
+        background-color: var(--gray-900);
+
+        border: 1px solid var(--gray-900);
+        border-radius: 50%;
+
+        margin: 0.3rem;
+      }
+    }
+
+    p:last-child {
+      font-weight: bold;
+      margin-top: 0;
+    }
   }
 }
 
@@ -153,6 +229,7 @@
     a {
       text-decoration: none;
       color: var(--gray-900);
+      margin-bottom: 2rem;
     }
   }
 }

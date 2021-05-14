@@ -21,10 +21,7 @@ const getUser = async(username) => {
     description: repo.description
   })
 
-  const repos = originalReposList
-                  .filter(isNotFork)
-                  .filter(dontShowRepos)
-                  .map(extractData)
+  const repos = originalReposList.filter(isNotFork).filter(dontShowRepos).map(extractData)
 
   return {user, repos}
 }
