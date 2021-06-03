@@ -56,7 +56,7 @@ const Index = ({ repos, user }) => {
             })}
           </div>
         </section>
-        
+
         <Footer />
       </body>
     </div>
