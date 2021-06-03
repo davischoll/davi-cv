@@ -35,10 +35,9 @@ const Index = ({ repos, user }) => {
         </header>
 
         <section className={styles.aboutMe}>
-          <p>Estudante de tecnologia, em aprendizado constante e busca por ser melhor. Iniciando o caminho do desenvolvimento de software e a cada dia mais apaixonado por isso. Alguma experiência com infraestrutura de TI e suporte técnico.</p>
-          <p>Um pouco músico e um pouco de várias outras coisas também... Gosto de gente, de bons amigos e boas conversas! Valorizo lugares calmos e tranquilos, para uma ótima leitura e reflexão.
-            Adoro o presente, neste mundo tecnológico e virtual em que estamos, onde podemos, com a tecnologia, facilitar a vida das pessoas e desburocratizar um monte de coisas. E, assim, poder viver sempre o melhor da vida, colocando todos os dias as prioridades em primeiro lugar.</p>
-          <p>Encontro satisfação ao colaborar de maneira ativa, colocando em prática conhecimentos, habilidades e experiência de vida em favor das organizações e das pessoas, contribuindo sempre para o benefício e crescimento de todos ao meu redor.</p>
+          <p>Estudante de tecnologia, em constante aprendizado e busca por ser alguém melhor. Iniciando o caminho do desenvolvimento de software e a cada dia mais apaixonado por isso.</p>
+          <p>Um pouco músico e um pouco de várias outras coisas... Gosto de gente, de bons amigos e boas conversas! Valorizo lugares calmos e tranquilos, para uma ótima leitura e reflexão.
+            Adoro o presente mundo, tecnológico e virtual, em que a tecnologia pode facilitar a vida das pessoas e desburocratizar um monte de coisas, nos dando mais tempo para viver as prioridades reais da vida.</p>
         </section>
 
         <Education />
