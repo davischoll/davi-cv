@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import Education from '../components/Education'
 
 import styles from './home.module.scss'
+import Repos from '../components/Repos'
 
 const Index = ({ repos, user }) => {
   return (
@@ -41,22 +42,7 @@ const Index = ({ repos, user }) => {
         </section>
 
         <Education />
-
-        <section className={styles.githubRepos}>
-          <p className={styles.githubStatus}><b>Github status</b>: Public Repos: {user.public_repos}</p>
-          <div className={styles.reposList}>
-            {repos.map(repo => {
-              return (
-                <div key={repo.id} className={styles.repo}>
-                  <h3><a href={"https://github.com/" + repo.full_name} target="blank">{repo.full_name}</a></h3>
-                  <p>Language: {repo.language}</p>
-                  <p>{repo.description}</p>
-                </div>
-              )
-            })}
-          </div>
-        </section>
-
+        <Repos repos={repos} user={user} />
         <Footer />
       </body>
     </div>
