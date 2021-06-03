@@ -6,7 +6,7 @@ Este projeto é o código fonte do currículo online de Davi Scholl, disponível
 
 Página construída com [Next.js](https://nextjs.org/) e [React](https://reactjs.org/), que busca e exibe todos os repositórios da conta do Github em tempo real.
 
-![Preview](https://github.com/davischoll/davi-cv/blob/master/public/davi-scholl-dev.png?raw=true)
+![Preview](https://github.com/davischoll/davi-cv/blob/main/public/davi-scholl-dev.png?raw=true)
 
 ## Pré-requisitos
 
