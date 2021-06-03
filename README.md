@@ -33,7 +33,7 @@ Pode ser colocado em produção utilizando o Vercel, sem nenhuma necessidade de 
 
 ## Licença
 
-Licenciado sob a licença MIT - veja [LICENSE](LICENSE) para mais informações.
+Licenciado sob a licença MIT - veja [LICENSE](LICENSE.md) para mais informações.
 
 ## Agradecimentos
 
@@ -41,7 +41,7 @@ Projeto construído nas aulas do curso Fullstack Master do [Devpleno](http://dev
 
 ---
 
-## Documentação passo a passo
+# Documentação passo a passo
 
 Para criar esta apresentação, foi utilizado o Node.js com NPM, seguindo a seguinte sequência detalhada:
 
