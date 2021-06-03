@@ -2,7 +2,6 @@ import React from 'react'
 import Head from 'next/head'
 import { FaLinkedin, FaGithubSquare, FaInstagramSquare } from 'react-icons/fa'
 
-import getUser from '../utils/getUser'
 import Footer from '../components/Footer'
 import Education from '../components/Education'
 
@@ -49,7 +48,8 @@ const Index = ({ repos, user }) => {
 }
 
 export async function getServerSideProps(context) {
-  const { repos, user } = await getUser('davischoll')
+  const request = await fetch(process.env.API_URL + '/api/getUser')
+  const { repos, user } = await request.json()
 
   return {
     props: {
